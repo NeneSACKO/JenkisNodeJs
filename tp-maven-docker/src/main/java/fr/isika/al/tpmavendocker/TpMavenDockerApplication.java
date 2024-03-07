@@ -8,6 +8,7 @@ public class TpMavenDockerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TpMavenDockerApplication.class, args);
+		//test
 	}
 
 }
