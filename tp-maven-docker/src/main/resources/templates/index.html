@@ -7,12 +7,13 @@
 	href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" />
 </head>
 <body>
-		<div class="input">
-			<h1>Best Appli'</h1>
-	<form th:action="@{/sendName}"  method = "POST" >
-			<label class="name">Nom </label> <input th:name = "name" class="name" ></input>
-			<input type="submit" value ="valider"> 
-	</form>
-		</div>
+	<div class="input">
+		<h1>Best Appli'</h1>
+		<form th:action="@{/sendName}" method="POST">
+			<label class="name">Nom </label> <input th:name="name" class="name"></input>
+			<input type="submit" value="valider">
+		</form>
+	</div>
+	<span th:text="${greeting}"></span>
 </body>
 </html>
