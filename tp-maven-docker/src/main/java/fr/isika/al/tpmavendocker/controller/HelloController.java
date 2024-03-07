@@ -1,6 +1,6 @@
 package fr.isika.al.tpmavendocker.controller;
 
-import org.springframework.ui.Model;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,9 +14,9 @@ public class HelloController {
 		return "index";
 	}
 	
-	@PostMapping("/send")
-	public ModelAndView sendName(Model model) {
-		String name =(String) model.getAttribute("name");
-		return "/";
-	}
+//	@PostMapping("/send")
+//	public ModelAndView sendName(Model model) {
+//		String name =(String) model.getAttribute("name");
+//		return "/";
+//	}
 }
