@@ -14,9 +14,9 @@ public class HelloController {
 		return "index";
 	}
 	
-	@PostMapping("/send")
-	public ModelAndView sendName(Model model) {
-		String name =(String) model.getAttribute("name");
-		return "/";
-	}
+//	@PostMapping("/send")
+//	public ModelAndView sendName(Model model) {
+//		String name =(String) model.getAttribute("name");
+//		return "/";
+//	}
 }
