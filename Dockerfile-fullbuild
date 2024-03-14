@@ -1,0 +1,10 @@
+FROM maven:3.8.6-openjdk-11-sli
+
+WORKDIR /srv
+
+COPY ./pom.xml .
+COPY ./src .
+
+RUN mvn clean install -DskipTests
+
+CMD ["java", "-jar", "tp-maven-docker-0.0.1-SNAPSHOT.jar"]
